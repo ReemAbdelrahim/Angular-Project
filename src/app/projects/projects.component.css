@@ -1,0 +1,36 @@
+/* thead,tbody,td{
+    border: 2px solid rgba(0, 0, 0, 0.767);
+   
+    
+ 
+}
+th{
+    border: 2px solid rgba(0, 0, 0, 0.932);
+    font-size: 20px;
+}
+td{
+    
+    color:rgb(63, 62, 62);
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    vertical-align: middle;
+} */
+
+img{
+    height: 100px;
+    width: 150px;
+}
+.text{
+    color: blue;
+    font-size: larger;
+    justify-content: center;
+    text-align: center;
+}
+.status{
+    color: green;
+}
+.sum{
+    text-align: center;
+    font-size: xx-large;
+    color: cornflowerblue;
+}

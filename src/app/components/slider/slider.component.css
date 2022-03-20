@@ -1,0 +1,55 @@
+.container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo {
+    font-size: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  .para{
+      width: 500px;
+      margin-top: 100px;
+  margin-left: 100px;
+  }
+  .cont{
+    
+      flex-wrap: wrap;
+      display: flex;
+      margin-left: 10px;
+  }
+  .image{
+  position: relative;
+  left:90%;
+  bottom: 300px;
+  width: 500px;
+  height: 400px;
+
+
+  }
+  /* .nums{
+  
+    font-size: 500%;
+  } */
+  .text{
+    text-align: center;
+    width: 400px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+  }
+  .stat{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nums{
+    font-size: 500%;
+    color: rgb(11, 129, 207);
+    font-weight: bold;
+    
+  }

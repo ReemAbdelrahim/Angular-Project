@@ -1,0 +1,39 @@
+<div class="container responsive">
+
+    <p   appLightBox mouseenterr='yellow' mouseoutt="red" class="text-center text-danger fs-1"> Projects </p>
+    <table class="table ">
+        <thead class="text-center">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Image</th>
+            <th scope="col">Status</th>
+            <th scope="col">Required Qunatity</th>
+            <th scope="col">Date</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+           
+          </tr>
+        </thead>
+        
+         
+            <tbody class="text-center ">
+         
+          <tr *ngFor="let item of arrprojects" class="mt-4"  >
+            <!-- [class.bg-info]="item.quantity==1" -->
+            <td>{{item.id}}</td>
+            <td class="text"><a routerLink="/About">{{item.title}}</a></td>
+            <td><img  appLightBox mouseoutt="blue" mouseenterr='orange' [src]="item.imagrUrl"></td>
+            <td class="status">{{item.status}}</td>
+            <td><input #temp class="mt-4 border-light rounded" type="number" placeholder="enter quantity"></td>
+            <td >{{date|date:'MMM d,y'}}</td>
+            <td>{{item.price|currency:"EUR"}}</td>
+            <td><button (click)="totalPrice(item.price,temp.value)" class="btn btn-primary mt-4">Bye Now </button></td>
+            
+           
+          </tr>
+          
+        </tbody>
+      </table>
+      <p class="sum"> Total Price= {{sum}} </p>
+    </div>
